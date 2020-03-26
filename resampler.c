@@ -130,7 +130,7 @@ smp_16_t* resample(const freq_t freq_original, const freq_t freq_target, const s
     }
 
     smpn_t samples_interpolated = 0;
-    smp_16_t* signal_interpolated = nullptr;
+    smp_16_t* signal_interpolated = NULL;
 
     if (M == 1)
     {
@@ -147,7 +147,7 @@ smp_16_t* resample(const freq_t freq_original, const freq_t freq_target, const s
         return NULL;
     }
 
-    smp_16_t* signal_decimated = nullptr;
+    smp_16_t* signal_decimated = NULL;
     smpn_t samples_decimated = 0;
 
     if (N == 1)
